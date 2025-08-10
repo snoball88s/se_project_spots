@@ -14,6 +14,6 @@ The Spots webpage project is an interactive image-sharing application allowing u
 
 This webpage is deployed to Github Pages
 
--Deployment Link: https://snoball88s.github.io/se_project_spots/
+-[Deployment Link](https://snoball88s.github.io/se_project_spots/)
   
 
