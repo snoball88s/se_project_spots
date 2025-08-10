@@ -1,0 +1,128 @@
+.profile{
+  display: flex;
+  padding: 34px 0 20px;
+  border-bottom: 1px rgb(33, 33, 33, 0.4) solid;
+}
+
+.profile__avatar{
+  width: 190px;
+  height: 190px;
+  border-radius: 8px;
+  margin-right: 20px;
+
+}
+
+.profile__column{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profile__name{
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__description{
+  margin: 12px 0 0;
+  opacity: 70%;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 420px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__edit-button{
+  border: none;
+  background: none;
+  color:#212121;
+  opacity: 70%;
+  padding: 0;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.profile__add-button{
+  margin-left: auto;
+  margin-top: auto;
+  padding: 0;
+  width: 149px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #fff;
+
+}
+
+.profile__add-button-image{
+  height: 12px;
+  width: 12px;
+  margin-right:8px
+}
+
+.profile__add-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover{
+  cursor: pointer;
+  opacity: 100%;
+}
+
+@media screen and (max-width: 870px) {
+  .profile{
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px
+  }
+
+  .profile__avatar {
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+  }
+
+ .profile__column{
+    margin:0 0 20px;
+  }
+
+  .profile__name {
+    color: #212121;
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .profile__description{
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .profile__add-button{
+    width: 100%;
+  }
+
+  .profile__edit-button{
+    align-self: center;
+    margin-top: 32px;
+  }
+
+}
