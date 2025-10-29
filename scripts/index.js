@@ -1,21 +1,19 @@
 const profileEditButton = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-button");
+const editProfileCloseButton = editProfileModal.querySelector(".modal__close-button");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector("#profile-name-input");
 const editProfileDescInput = editProfileModal.querySelector("#profile-description-input");
 
 const newPostButton = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
-const newPostCloseBtn = newPostModal.querySelector(".modal__close-button");
+const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 
-const profileNameEl = document.querySelector(".profile__name")
-const profileDescEl = document.querySelector(".profile__description")
+const profileNameElement = document.querySelector(".profile__name");
+const profileDescElement = document.querySelector(".profile__description");
 
 const newPostImgInput = newPostModal.querySelector("#image-link-input");
 const newPostCaptionInput = newPostModal.querySelector("#caption-input");
-
-const newPostCardForm = document.querySelector(".cards__list");
 
 
 profileEditButton.addEventListener("click", function() {
@@ -24,7 +22,7 @@ profileEditButton.addEventListener("click", function() {
   editProfileModal.classList.add("modal_is-opened");
 })
 
-editProfileCloseBtn.addEventListener("click", function(){
+editProfileCloseButton.addEventListener("click", function(){
   editProfileModal.classList.remove("modal_is-opened");
 })
 
@@ -32,7 +30,7 @@ newPostButton.addEventListener("click", function(){
   newPostModal.classList.add("modal_is-opened");
 })
 
-newPostCloseBtn.addEventListener("click", function(){
+newPostCloseButton.addEventListener("click", function(){
   newPostModal.classList.remove("modal_is-opened");
 })
 
