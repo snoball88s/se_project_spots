@@ -1,5 +1,6 @@
 .modal {
   visibility: hidden;
+  opacity: 0;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -9,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
 .modal__title{
@@ -52,6 +54,8 @@
 
 .modal_is-opened{
   visibility: visible;
+  opacity: 1;
+
 }
 
 .modal__container{
@@ -89,6 +93,15 @@
   border-radius: 8px;
 }
 
+.modal__close-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.modal__submit-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 870px) {
   .modal {
